@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/ashwathama-tigers-website/static/css/main.012e9608.css",
+    "main.js": "/ashwathama-tigers-website/static/js/main.6f44af76.js",
+    "static/media/team_logo.jpg": "/ashwathama-tigers-website/static/media/team_logo.4a8bb2b7c89fbb565a70.jpg",
+    "static/media/teamgrouppic1.jpg": "/ashwathama-tigers-website/static/media/teamgrouppic1.464e70b59057b238e829.jpg",
+    "static/media/sevayojane6.jpg": "/ashwathama-tigers-website/static/media/sevayojane6.ea9dae5a1ad6e0d4cc3c.jpg",
+    "static/media/sevayojane3.jpg": "/ashwathama-tigers-website/static/media/sevayojane3.ca2fadd9156857725e4d.jpg",
+    "static/media/sevayojane4.jpg": "/ashwathama-tigers-website/static/media/sevayojane4.da1eaf255d1999b5ae06.jpg",
+    "static/media/sevayojane7.jpg": "/ashwathama-tigers-website/static/media/sevayojane7.299c12dcf2c0f27a65c0.jpg",
+    "static/media/sevayojane5.jpg": "/ashwathama-tigers-website/static/media/sevayojane5.7b916a2ac52fa98b295b.jpg",
+    "static/media/sevayojane2.jpg": "/ashwathama-tigers-website/static/media/sevayojane2.2462cc7380cfee0aff13.jpg",
+    "static/media/mosarukudike2025.jpg": "/ashwathama-tigers-website/static/media/mosarukudike2025.9500dd9867762971856d.jpg",
+    "static/media/sevayojane1.jpg": "/ashwathama-tigers-website/static/media/sevayojane1.37ac2c249d1ab6836fa0.jpg",
+    "index.html": "/ashwathama-tigers-website/index.html",
+    "main.012e9608.css.map": "/ashwathama-tigers-website/static/css/main.012e9608.css.map",
+    "main.6f44af76.js.map": "/ashwathama-tigers-website/static/js/main.6f44af76.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.012e9608.css",
+    "static/js/main.6f44af76.js"
+  ]
+}
