@@ -10,7 +10,7 @@ const App = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
   return (
-    <Router basename='/'>
+    <Router>
       <div className="app">
         {/* Header */}
         <header className="header">
