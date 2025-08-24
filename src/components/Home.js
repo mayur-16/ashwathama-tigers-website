@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import teamLogo from '../assets/seva_brigade_logo.png';
-import sevayojane5 from '../assets/sevayojane/sevayojane5.jpg';
-import sevayojane6 from '../assets/sevayojane/sevayojane6.jpg';
-import sevayojane7 from '../assets/sevayojane/sevayojane7.jpg';
-import sevayojane8 from '../assets/sevayojane/sevayojane8.jpg';
-import teamGroupPic1 from '../assets/grouppics/teamgrouppic1.jpg';
+import teamLogo from '../assets/optimized/seva_brigade_logo.webp';
+import sevayojane5 from '../assets/optimized/sevayojane/sevayojane5.webp';
+import sevayojane6 from '../assets/optimized/sevayojane/sevayojane6.webp';
+import sevayojane7 from '../assets/optimized/sevayojane/sevayojane7.webp';
+import sevayojane8 from '../assets/optimized/sevayojane/sevayojane8.webp';
+import teamGroupPic1 from '../assets/optimized/grouppics/teamgrouppic1.webp';
 
 const sevayojaneData = [
   { receiver: 'Jayashree kunjathbail', reason: 'Road accident', image: sevayojane8 },
@@ -20,7 +20,10 @@ const Home = () => {
       {/* Hero Section */}
       <section className="hero">
         <div className="hero-content">
-          <img src={teamLogo} alt="Team Ashwatthama Tigers Logo - Tiger Dance Charity in Mangaluru" className="logo" />
+          <picture>
+            <source srcSet={teamLogo} type="image/webp" />
+            <img src={require('../assets/seva_brigade_logo.png')} alt="Team Ashwatthama Tigers Logo - Tiger Dance Charity in Mangaluru" className="logo" loading="lazy" />
+          </picture>
           <h1>Team Ashwatthama Tigers</h1>
         </div>
         <div className="hero-banner">
@@ -36,7 +39,10 @@ const Home = () => {
         <div className="sevayojane-grid">
           {sevayojaneData.map((item, index) => (
             <div key={index} className="sevayojane-item">
-              <img src={item.image} alt={`Sevayojane support for ${item.receiver} in Mangaluru`} className="sevayojane-img" />
+              <picture>
+                <source srcSet={item.image} type="image/webp" />
+                <img src={require(`../assets/sevayojane/sevayojane${index + 5}.jpg`)} alt={`Sevayojane support for ${item.receiver} in Mangaluru`} className="sevayojane-img" loading="lazy" />
+              </picture>
               <h3 className="sevayojane-name">{item.receiver}</h3>
             </div>
           ))}

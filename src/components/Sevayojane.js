@@ -1,15 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ChevronLeft } from 'lucide-react';
-import sevayojane1 from '../assets/sevayojane/sevayojane1.jpg';
-import sevayojane2 from '../assets/sevayojane/sevayojane2.jpg';
-import sevayojane3 from '../assets/sevayojane/sevayojane3.jpg';
-import sevayojane4 from '../assets/sevayojane/sevayojane4.jpg';
-import sevayojane5 from '../assets/sevayojane/sevayojane5.jpg';
-import sevayojane6 from '../assets/sevayojane/sevayojane6.jpg';
-import sevayojane7 from '../assets/sevayojane/sevayojane7.jpg';
-import sevayojane8 from '../assets/sevayojane/sevayojane8.jpg';
-
+import sevayojane1 from '../assets/optimized/sevayojane/sevayojane1.webp';
+import sevayojane2 from '../assets/optimized/sevayojane/sevayojane2.webp';
+import sevayojane3 from '../assets/optimized/sevayojane/sevayojane3.webp';
+import sevayojane4 from '../assets/optimized/sevayojane/sevayojane4.webp';
+import sevayojane5 from '../assets/optimized/sevayojane/sevayojane5.webp';
+import sevayojane6 from '../assets/optimized/sevayojane/sevayojane6.webp';
+import sevayojane7 from '../assets/optimized/sevayojane/sevayojane7.webp';
+import sevayojane8 from '../assets/optimized/sevayojane/sevayojane8.webp';
 
 const sevayojaneData = [
   { receiver: 'Jayashree kunjathbail', reason: 'Road accident', image: sevayojane8 },
@@ -34,7 +33,10 @@ const Sevayojane = () => {
       <div className="sevayojane-grid">
         {sevayojaneData.map((item, index) => (
           <div key={index} className="sevayojane-item">
-            <img src={item.image} alt={`Sevayojane support for ${item.receiver} in Mangaluru`} className="sevayojane-img" />
+            <picture>
+              <source srcSet={item.image} type="image/webp" />
+              <img src={require(`../assets/sevayojane/sevayojane${8 - index}.jpg`)} alt={`Sevayojane support for ${item.receiver} in Mangaluru`} className="sevayojane-img" loading="lazy" />
+            </picture>
             <h3 className="sevayojane-name">{item.receiver}</h3>
             <p className="sevayojane-reason">{item.reason}</p>
           </div>
