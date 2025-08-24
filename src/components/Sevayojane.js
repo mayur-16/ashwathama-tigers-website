@@ -8,15 +8,18 @@ import sevayojane4 from '../assets/sevayojane/sevayojane4.jpg';
 import sevayojane5 from '../assets/sevayojane/sevayojane5.jpg';
 import sevayojane6 from '../assets/sevayojane/sevayojane6.jpg';
 import sevayojane7 from '../assets/sevayojane/sevayojane7.jpg';
+import sevayojane8 from '../assets/sevayojane/sevayojane8.jpg';
+
 
 const sevayojaneData = [
-  { receiver: 'Eshwar Mudipu', reason: 'Leg Surgery', image: sevayojane7 },
+  { receiver: 'Jayashree kunjathbail', reason: 'Road accident', image: sevayojane8 },
+  { receiver: 'Eshwar Mudipu', reason: 'Leg surgery', image: sevayojane7 },
   { receiver: 'Charan', reason: 'Compound wall', image: sevayojane6 },
   { receiver: 'Abhilash madanthyar', reason: 'Health issues', image: sevayojane5 },
-  { receiver: 'Sathwik Devadiga', reason: 'Bone Cancer', image: sevayojane4 },
-  { receiver: 'Santhosh Iruvail', reason: 'Blood Cancer', image: sevayojane3 },
-  { receiver: 'M. Jagannatha', reason: 'Chest Pain', image: sevayojane2 },
-  { receiver: 'Neetha Bushan Jalligudde', reason: 'Blood Cancer', image: sevayojane1 },
+  { receiver: 'Sathwik Devadiga', reason: 'Bone cancer', image: sevayojane4 },
+  { receiver: 'Santhosh Iruvail', reason: 'Blood cancer', image: sevayojane3 },
+  { receiver: 'M. Jagannatha', reason: 'Chest pain', image: sevayojane2 },
+  { receiver: 'Neetha Bushan Jalligudde', reason: 'Blood cancer', image: sevayojane1 },
 ];
 
 const Sevayojane = () => {

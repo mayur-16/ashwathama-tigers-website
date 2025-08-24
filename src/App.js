@@ -10,7 +10,7 @@ const App = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
   return (
-    <Router>
+    <Router basename='/'>
       <div className="app">
         {/* Header */}
         <header className="header">
@@ -28,7 +28,7 @@ const App = () => {
             <NavLink to="/events" className="nav-link" activeClassName="active" onClick={() => setIsDrawerOpen(false)}>Events</NavLink>
           </div>
           <a
-            href="upi://pay?pa=udaypoojary11@oksbi&pn=Team%20Ashwathama%20Tigers&cu=INR"
+            href="upi://pay?pa=udaypoojary11@oksbi&pn=Team%20ashwatthama%20Tigers&cu=INR"
             className="donate-button"
           >
             Donate

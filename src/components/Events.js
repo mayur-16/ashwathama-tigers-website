@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ChevronLeft } from 'lucide-react';
 import mosarukudike2025 from '../assets/mosarukudike/mosarukudike2025.jpg';
+import oodu_2025 from '../assets/events/oodu_2025.jpg';
+
 
 const Events = () => {
   return (
@@ -15,6 +17,10 @@ const Events = () => {
       <div className="event-item">
         <h3 className="event-name">Mosarukudike 2025</h3>
         <img src={mosarukudike2025} alt="Mosarukudike cultural event by Team Ashwatthama Tigers in Mangaluru" className="event-img" />
+      </div>
+      <div className="event-item">
+        <h3 className="event-name">Oodu pooja 2025</h3>
+        <img src={oodu_2025} alt="Oodu pooja of Team Ashwatthama Tigers in Mangaluru" className="event-img" />
       </div>
     </section>
   );
