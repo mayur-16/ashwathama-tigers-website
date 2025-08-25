@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/static/css/main.824e425e.css",
+    "main.js": "/static/js/main.d46c7ad9.js",
+    "static/media/seva_brigade_logo.png": "/static/media/seva_brigade_logo.7eeaa312bd9092d66717.png",
+    "static/media/teamgrouppic1.webp": "/static/media/teamgrouppic1.59edb9257d54d8cd4e5c.webp",
+    "static/media/sevayojane6.webp": "/static/media/sevayojane6.7bae5d1f2bb52ac3983d.webp",
+    "static/media/sevayojane6.jpg": "/static/media/sevayojane6.ea9dae5a1ad6e0d4cc3c.jpg",
+    "static/media/sevayojane3.jpg": "/static/media/sevayojane3.ca2fadd9156857725e4d.jpg",
+    "static/media/sevayojane4.jpg": "/static/media/sevayojane4.da1eaf255d1999b5ae06.jpg",
+    "static/media/sevayojane3.webp": "/static/media/sevayojane3.b43ea9723baa84208c11.webp",
+    "static/media/sevayojane8.jpg": "/static/media/sevayojane8.84b1eeb9692ff4410409.jpg",
+    "static/media/sevayojane7.jpg": "/static/media/sevayojane7.299c12dcf2c0f27a65c0.jpg",
+    "static/media/sevayojane5.jpg": "/static/media/sevayojane5.7b916a2ac52fa98b295b.jpg",
+    "static/media/sevayojane4.webp": "/static/media/sevayojane4.c00a7acf9e732979f352.webp",
+    "static/media/sevayojane2.jpg": "/static/media/sevayojane2.2462cc7380cfee0aff13.jpg",
+    "static/media/sevayojane8.webp": "/static/media/sevayojane8.7555b12ead32ed1d5b18.webp",
+    "static/media/sevayojane7.webp": "/static/media/sevayojane7.be037248f2f58b26ca56.webp",
+    "static/media/sevayojane5.webp": "/static/media/sevayojane5.d0d7774c9d321305c57c.webp",
+    "static/media/sevayojane2.webp": "/static/media/sevayojane2.266ea915e8de6c916064.webp",
+    "static/media/mosarukudike2025.jpg": "/static/media/mosarukudike2025.9500dd9867762971856d.jpg",
+    "static/media/seva_brigade_logo.webp": "/static/media/seva_brigade_logo.c607dbe531b8c91e37e4.webp",
+    "static/media/mosarukudike2025.webp": "/static/media/mosarukudike2025.d68e92ed938543786029.webp",
+    "static/media/sevayojane1.jpg": "/static/media/sevayojane1.37ac2c249d1ab6836fa0.jpg",
+    "static/media/oodu_2025.jpg": "/static/media/oodu_2025.3b24c321c57e2ef897ae.jpg",
+    "static/media/oodu_2025.webp": "/static/media/oodu_2025.555156a7a2d5255642d5.webp",
+    "static/media/sevayojane1.webp": "/static/media/sevayojane1.2f59c4d275fc6808511b.webp",
+    "index.html": "/index.html",
+    "main.824e425e.css.map": "/static/css/main.824e425e.css.map",
+    "main.d46c7ad9.js.map": "/static/js/main.d46c7ad9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.824e425e.css",
+    "static/js/main.d46c7ad9.js"
+  ]
+}
