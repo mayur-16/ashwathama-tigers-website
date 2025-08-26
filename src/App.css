@@ -78,11 +78,42 @@ body {
 
 .hero-content {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: start;
-  gap: 0px;
-  margin-bottom: 20px;
-  margin-left: 10px;
+  justify-content: flex-start; /* Left align content */
+  padding-left: 10px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 30px;
+  gap: 5px;
+}
+
+.team-name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Left align text */
+  text-align: left;
+}
+
+.team-name h1, .team-name h2, .team-name h3 {
+  background: linear-gradient(90deg, #FFD700, #FF4500,#FF0000); /* Yellow to orange to red for fiery look */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; /* Makes gradient visible */
+  margin: 0px; /* Spacing between lines */
+  font-weight: bold;
+}
+
+.team-name h1 {
+  font-size: 1.1rem; /* Adjust as needed */
+}
+
+.team-name h2 {
+  font-size: 1rem;
+}
+
+.team-name h3 {
+  font-size: 1.0rem;
 }
 
 .hero-banner {
@@ -142,12 +173,12 @@ body {
   height: auto;
 }
 
-.hero h1 {
+/* .hero h1 {
   font-size: 20px;
   font-weight: 650;
   color: #b45309;
   margin: 0px;
-}
+} */
 
 h2 {
   font-size: 27px; 
@@ -447,13 +478,21 @@ p {
   }
 
   .logo {
-    width: 10vw;
-    max-width: 35px;
+    width: 15vw;
+    max-width: 45px;
   }
 
-  .hero h1 {
-    font-size: 0.9rem;
-  }
+  .team-name h1 {
+  font-size: 0.9rem; /* Adjust as needed */
+}
+
+.team-name h2 {
+  font-size: 0.9rem;
+}
+
+.team-name h3 {
+  font-size: 0.8rem;
+}
 
   .hero-text {
     font-size: 1.1rem;

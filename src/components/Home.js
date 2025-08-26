@@ -24,7 +24,11 @@ const Home = () => {
             <source srcSet={teamLogo} type="image/webp" />
             <img src={require('../assets/seva_brigade_logo.png')} alt="Team Ashwatthama Tigers Logo - Tiger Dance Charity in Mangaluru" className="logo" loading="lazy" />
           </picture>
-          <h1>Team Ashwatthama Tigers</h1>
+          <div className="team-name">
+          <h1>Team Ashwatthama</h1>
+          <h3>Edurupadavu Tigers</h3>
+          <h3>Seva Brigade (R.)</h3>
+        </div>
         </div>
         <div className="hero-banner">
           <h3 className="hero-text young-hearts">Young hearts,</h3>
@@ -70,7 +74,7 @@ const Home = () => {
         <h2 className="section-title">Make a Difference Today</h2>
         <p>Your support fuels our mission to preserve culture and uplift lives. Every contribution counts!</p>
         <a
-          href="upi://pay?pa=udaypoojary11@oksbi&pn=Team%20Ashwatthama%20Tigers&cu=INR"
+         href="upi://pay?pa=kishannaik199326@oksbi&pn=Team%20Ashwatthama%20Tigers&cu=INR"
           className="donate-button"
         >
           Donate Now
