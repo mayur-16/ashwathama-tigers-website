@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.19fc4ed0.css",
-    "main.js": "/static/js/main.469c8386.js",
+    "main.js": "/static/js/main.faa59b35.js",
     "static/media/seva_brigade_logo.png": "/static/media/seva_brigade_logo.7eeaa312bd9092d66717.png",
     "static/media/teamgrouppic1.webp": "/static/media/teamgrouppic1.59edb9257d54d8cd4e5c.webp",
     "static/media/sevayojane6.webp": "/static/media/sevayojane6.7bae5d1f2bb52ac3983d.webp",
@@ -27,10 +27,10 @@
     "static/media/sevayojane1.webp": "/static/media/sevayojane1.2f59c4d275fc6808511b.webp",
     "index.html": "/index.html",
     "main.19fc4ed0.css.map": "/static/css/main.19fc4ed0.css.map",
-    "main.469c8386.js.map": "/static/js/main.469c8386.js.map"
+    "main.faa59b35.js.map": "/static/js/main.faa59b35.js.map"
   },
   "entrypoints": [
     "static/css/main.19fc4ed0.css",
-    "static/js/main.469c8386.js"
+    "static/js/main.faa59b35.js"
   ]
 }
