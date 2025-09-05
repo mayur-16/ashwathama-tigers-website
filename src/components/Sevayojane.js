@@ -29,7 +29,7 @@ const Sevayojane = () => {
         Back
       </Link>
       <h2 className="section-title">Sevayojane Initiatives</h2>
-      <p>Our Sevayojane program supports individuals facing health challenges with community contributions.</p>
+      <p>Our Sevayojane program, rooted in Mangaluru’s Edurupadavu, supports individuals facing health challenges with community contributions.</p>
       <div className="sevayojane-grid">
         {sevayojaneData.map((item, index) => (
           <div key={index} className="sevayojane-item">

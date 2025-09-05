@@ -58,7 +58,7 @@ const Home = () => {
       <section className="section about">
         <h2 className="section-title">About Us</h2>
         <p>
-          We are a team of youngsters from Mangaluru, Karnataka, passionate about preserving Tulu Nadu's culture through the Tiger Dance. Performed during Navratri to honor Goddess Sharada . Our Tiger Dance unites the community and supports our charity initiative, <strong>Sevayojane</strong>, helping those in need with donations collected.
+          We are a team of youngsters from Edurupadavu, Moodushedde, Mangaluru, Karnataka, passionate about preserving Tulu Nadu's culture through the Tiger Dance. Performed during Navratri to honor Goddess Sharada . Our Tiger Dance unites the Mangaluru community and supports our charity initiative, <strong>Sevayojane</strong>, helping those in need with donations collected.
         </p>
       </section>
 

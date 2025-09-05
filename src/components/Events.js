@@ -12,7 +12,7 @@ const Events = () => {
         Back
       </Link>
       <h2 className="section-title">Events</h2>
-      <p>We engage in cultural and social initiatives like Mosarukudike and Swachh Bharath to promote heritage and cleanliness.</p>
+      <p>We engage in cultural and social initiatives like Mosarukudike and Swachh Bharath in Mangaluru to promote Tulu Nadu’s heritage and cleanliness.</p>
       <div className="event-item">
         <h3 className="event-name">Mosarukudike 2025</h3>
         <picture>
