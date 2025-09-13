@@ -8,22 +8,33 @@
   <meta name="author" content="Team Ashwatthama Tigers" />
   <meta name="robots" content="index, follow" />
   <title>Team Ashwatthama Tigers - Tiger Dance & Charity in Mangaluru</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
   <link rel="canonical" href="https://www.teamashwatthama.in/" />
-  <link rel="preload" href="%PUBLIC_URL%/static/media/seva_brigade_logo.webp" as="image" />
-  <link rel="preload" href="%PUBLIC_URL%/static/media/sevayojane6.webp" as="image" />
+  <script>
+    // Dynamically preload images with hashed filenames
+    function preloadImage(src) {
+      const link = document.createElement('link');
+      link.rel = 'preload';
+      link.as = 'image';
+      link.href = src;
+      document.head.appendChild(link);
+    }
+    // These paths come from imports in Home.js, resolved by CRA
+    preloadImage('%PUBLIC_URL%/static/media/seva_brigade_logo.[hash].webp'.replace('[hash]', 'c607dbe531b8c91e37e4')); // Replace with actual hash after build
+    preloadImage('%PUBLIC_URL%/static/media/sevayojane6.[hash].webp'.replace('[hash]', '7bae5d1f2bb52ac3983d')); // Replace with actual hash after build
+  </script>
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Organization",
       "name": "Team Ashwatthama Tigers",
-      "alternateName": "Team Ashwathama, Ashwathama , team ashwathama, Ashwathama Tigers , Edurupadavu Tigers, Seva Brigade",
-      "description": "A team of youngsters from Edurupadavu, Mangaluru, Karnataka, dedicated to preserving Tulu Nadu's culture through Tiger Dance (Hulivesha, Pili Yesa) and supporting the community through Sevayojane charity initiatives.", 
+      "alternateName": "Team Ashwathama, Ashwathama, team ashwathama, Ashwathama Tigers, Edurupadavu Tigers, Seva Brigade",
+      "description": "A team of youngsters from Edurupadavu, Mangaluru, Karnataka, dedicated to preserving Tulu Nadu's culture through Tiger Dance (Hulivesha, Pili Yesa) and supporting the community through Sevayojane charity initiatives.",
       "url": "https://www.teamashwatthama.in",
-      "logo": "https://www.teamashwatthama.in/assets/optimized/seva_brigade_logo.webp",
+      "logo": "%PUBLIC_URL%/static/media/seva_brigade_logo.c607dbe531b8c91e37e4.webp", // Update after finding hash
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Edurupadavu, Moodushedde",
