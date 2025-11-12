@@ -1,8 +1,10 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+used Svgo for optimization.
 
-## Available Scripts
+
+## for generating structure.txt run this 
+tree -a -I 'venv|.cache' > structure.txt
 
 In the project directory, you can run:
 
