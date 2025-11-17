@@ -4,6 +4,7 @@ import './App.css';
 import Home from './components/Home';
 import Sevayojane from './components/Sevayojane';
 import Events from './components/Events';
+import DonateButton from './components/DonateButton';
 import { Menu, X } from 'lucide-react';
 
 const App = () => {
@@ -27,12 +28,8 @@ const App = () => {
             <NavLink to="/sevayojane" className="nav-link" activeClassName="active" onClick={() => setIsDrawerOpen(false)}>Sevayojane</NavLink>
             <NavLink to="/events" className="nav-link" activeClassName="active" onClick={() => setIsDrawerOpen(false)}>Events</NavLink>
           </div>
-          <a
-            href="upi://pay?pa=kishannaik199326@oksbi&pn=Team%20Ashwatthama%20Tigers&cu=INR"
-            className="donate-button"
-          >
-            Donate
-          </a>
+          {/* Changed from <a> tag to DonateButton component */}
+          <DonateButton>Donate</DonateButton>
         </header>
 
         {/* Routes */}
@@ -46,4 +43,4 @@ const App = () => {
   );
 };
 
- export default App;
+export default App;

@@ -1,82 +1,100 @@
 // src/components/DonationModal.jsx
 import React from "react";
-import { createPortal } from "react-dom";   // ← THIS IS THE KEY
+import { createPortal } from "react-dom";
 import { X, Download } from "lucide-react";
 import { generateDonationImage } from "../utils/generateDonationImage";
+import "./DonationModal.css";
 
 const bankInfo = {
   upiId: "QR919741922546-1505@unionbankofindia",
-  qrSrc: "/upi-qr.jpeg", // ← make sure this file exists in public/
+  qrSrc: "/upi-qr.jpeg",
   accountName: "TEAM ASHWATHAMA EDURUPADAVU TIGERS SEVA BRIGADE R",
   accountNo: "079622010001505",
   ifsc: "UBIN0907961",
   bank: "Union Bank of India, Vamanjoor Branch",
 };
 
-export default function DonationModal({ open, onClose }) {
+export default function DonationModal({ open, onOpenChange }) {
   if (!open) return null;
 
+  const handleClose = () => {
+    if (onOpenChange) onOpenChange();
+  };
+
   const modal = (
-    <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/60">
+    <div className="modal-overlay">
       {/* Backdrop */}
       <div
-        className="absolute inset-0"
-        onClick={onClose}
+        className="modal-backdrop"
+        onClick={handleClose}
         aria-hidden="true"
       />
 
       {/* Modal Card */}
-      <div className="relative w-full max-w-md mx-4 bg-white rounded-2xl shadow-2xl overflow-hidden">
+      <div className="modal-card">
         <button
-          onClick={onClose}
-          className="absolute top-4 right-4 z-10 p-2 rounded-full bg-white/80 hover:bg-gray-200 transition"
+          onClick={handleClose}
+          className="modal-close-btn"
           aria-label="Close"
         >
-          <X className="w-6 h-6" />
+          <X size={24} />
         </button>
 
-        <div className="p-6 pt-12 text-center">
-          <h3 className="text-2xl font-bold text-orange-600 mb-6">
+        <div className="modal-content">
+          <h3 className="modal-title">
             Donate to Team Ashwatthama Tigers
           </h3>
 
           {/* QR Code */}
-          <div className="mb-6">
+          <div className="modal-qr-section">
             <img
               src={bankInfo.qrSrc}
               alt="UPI QR Code"
-              className="w-64 h-64 mx-auto border-4 border-gray-200 rounded-xl"
+              className="modal-qr-image"
             />
-            <p className="mt-4 font-mono text-lg bg-gray-100 px-4 py-2 rounded-lg inline-block">
-              {bankInfo.upiId}
-            </p>
+            <div className="modal-upi-container">
+              <p className="modal-upi-id">
+                {bankInfo.upiId}
+              </p>
+              <button
+                onClick={() => {
+                  navigator.clipboard.writeText(bankInfo.upiId);
+                  alert('UPI ID copied!');
+                }}
+                className="modal-copy-btn"
+                aria-label="Copy UPI ID"
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+              </button>
+            </div>
           </div>
 
           {/* Bank Details */}
-          <div className="bg-gray-50 rounded-xl p-5 text-left text-sm space-y-2">
+          <div className="modal-bank-details">
             <p><strong>Account Name:</strong> {bankInfo.accountName}</p>
             <p><strong>A/c No:</strong> {bankInfo.accountNo}</p>
             <p><strong>IFSC:</strong> {bankInfo.ifsc}</p>
             <p><strong>Bank:</strong> {bankInfo.bank}</p>
           </div>
 
-          <p className="mt-5 text-gray-600 text-sm">
+            <button
+              onClick={() => generateDonationImage(bankInfo)}
+              className="modal-download-btn"
+            >
+              <Download size={24} />
+              Download QR & Details
+            </button>
+          
+           <p className="modal-info-text">
             All donations support Tigerdance and charity work in Mangaluru
           </p>
-
-          {/* Download Button */}
-          <button
-            onClick={() => generateDonationImage(bankInfo)}
-            className="mt-6 w-full bg-orange-600 text-white py-4 rounded-xl font-semibold text-lg hover:bg-orange-700 transition flex items-center justify-center gap-3"
-          >
-            <Download className="w-6 h-6" />
-            Download QR & Details (PNG)
-          </button>
         </div>
       </div>
     </div>
   );
 
-  // This line makes it appear on top of everything, even footer
   return createPortal(modal, document.body);
 }

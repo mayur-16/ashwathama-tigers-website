@@ -14,6 +14,9 @@
   <meta name="geo.placename" content="Edurupadavu, Moodushedde, Mangaluru" />
   <meta name="geo.position" content="12.9274;74.9189" /> <!-- Approx coordinates -->
   <meta name="ICBM" content="12.9274, 74.9189" />
+  <meta name="language" content="en, kn, tcy" />
+  <meta name="distribution" content="global" />
+  <meta name="rating" content="general" />
 
   <!-- Open Graph / Social -->
   <meta property="og:title" content="Team Ashwatthama Tigers | Pili Vesha & Charity in Mangaluru" />
@@ -31,26 +34,29 @@
   <link rel="manifest" href="/site.webmanifest" />
   <link rel="canonical" href="https://teamashwatthama.in/" />
 
+  <link rel="alternate" hreflang="en" href="https://teamashwatthama.in/" />
+  <link rel="alternate" hreflang="kn" href="https://teamashwatthama.in/" />    
+  <link rel="alternate" hreflang="tcy" href="https://teamashwatthama.in/" />
+
   <!-- Preload Critical Images (Update hashes after build) -->
   <script>
-    function preloadImage(src) {
-      const link = document.createElement('link');
-      link.rel = 'preload';
-      link.as = 'image';
-      link.href = src;
-      link.crossOrigin = 'anonymous';
-      document.head.appendChild(link);
-    }
+    // Safe preload for production (works even after CRA build)
+    (function () {
+      const base = document.querySelector("link[rel='canonical']").href.replace(/\/+$/, '');
+      
+      function preload(src) {
+        const link = document.createElement('link');
+        link.rel = 'preload';
+        link.as = 'image';
+        link.href = src;
+        link.crossOrigin = 'anonymous';
+        document.head.appendChild(link);
+      }
 
-    // Update these hashes after `npm run build`
-    const logoHash = 'c607dbe531b8c91e37e4';
-    const heroHash = '7bae5d1f2bb52ac3983d';
-
-    const publicUrl = '%PUBLIC_URL%'.replace('%PUBLIC_URL%', ''); // CRA placeholder
-    const base = publicUrl || '';
-
-    preloadImage(`${base}/static/media/seva_brigade_logo.${logoHash}.webp`);
-    preloadImage(`${base}/static/media/sevayojane6.${heroHash}.webp`);
+      // Update these hashes every time you run `npm run build`
+      preload(base + '/static/media/seva_brigade_logo.c607dbe531b8c91e37e4.webp');
+      preload(base + '/static/media/sevayojane6.7bae5d1f2bb52ac3983d.webp');
+    })();
   </script>
 
   <!-- Enhanced Structured Data (LocalBusiness + Organization + Event) -->

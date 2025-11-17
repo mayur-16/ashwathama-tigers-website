@@ -313,6 +313,7 @@ p {
   padding: 12px 25px;
   border-radius: 50px;
   text-decoration: none;
+  border: none; /* Add this - removes default button border */
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 

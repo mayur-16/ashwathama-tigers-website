@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
 
+# Allow all crawlers to access static assets
+Allow: /static/
+
 Sitemap: https://teamashwatthama.in/sitemap.xml
