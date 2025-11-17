@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import DonateButton from "./DonateButton";
 import teamLogo from '../assets/optimized/seva_brigade_logo.webp';
 import sevayojane5 from '../assets/optimized/sevayojane/sevayojane5.webp';
 import sevayojane6 from '../assets/optimized/sevayojane/sevayojane6.webp';
@@ -73,12 +74,7 @@ const Home = () => {
       <section className="section donation">
         <h2 className="section-title">Make a Difference Today</h2>
         <p>Your support fuels our mission to preserve culture and uplift lives. Every contribution counts!</p>
-        <a
-         href="upi://pay?pa=kishannaik199326@oksbi&pn=Team%20Ashwatthama%20Tigers&cu=INR"
-          className="donate-button"
-        >
-          Donate Now
-        </a>
+        <DonateButton className="donate-button">Donate Now</DonateButton>
       </section>
 
       {/* Footer */}
