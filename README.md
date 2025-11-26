@@ -5,6 +5,8 @@ used Svgo for optimization.
 
 ## for generating structure.txt run this 
 tree -a -I 'venv|.cache' > structure.txt
+or
+tree -a -I 'node_modules|pycache|dist|build|.git' > structure.txt
 
 In the project directory, you can run:
 
