@@ -32,12 +32,12 @@ const Sevayojane = () => {
           className="inline-flex items-center text-flame-600 hover:text-flame-700 font-semibold mb-6 sm:mb-8 group transition-colors"
         >
           <ChevronLeft className="mr-2 group-hover:-translate-x-1 transition-transform" size={20} />
-          Back to Home
+          Back
         </Link>
 
         {/* Header */}
         <div className="mb-8 sm:mb-12 animate-slide-up">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-flame-600 mb-2 relative inline-block">
+          <h1 className="text-2xl sm:text-4xl lg:text-3xl font-bold text-flame-600 mb-2 relative inline-block">
             Sevayojane Charity Initiatives
             <span className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-tiger-400 via-flame-500 to-transparent rounded-full"></span>
           </h1>

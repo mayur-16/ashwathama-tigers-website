@@ -77,7 +77,7 @@ const Home = () => {
         <div className="absolute inset-0 bg-tiger-stripes opacity-30"></div>
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="mb-8 sm:mb-12 animate-slide-up">
-            <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-flame-600 mb-2 relative inline-block">
+            <h2 className="text-2xl sm:text-3xl lg:text-3xl font-bold text-flame-600 mb-2 relative inline-block">
               Sevayojane Initiatives
               <span className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-tiger-400 via-flame-500 to-transparent rounded-full"></span>
             </h2>
@@ -127,7 +127,7 @@ const Home = () => {
       <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="mb-8 sm:mb-12 animate-slide-up">
-            <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-flame-600 mb-2 relative inline-block">
+            <h2 className="text-2xl sm:text-4xl lg:text-3xl font-bold text-flame-600 mb-2 relative inline-block">
               About Us - Tiger Dance Team Mangalore
               <span className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-tiger-400 via-flame-500 to-transparent rounded-full"></span>
             </h2>
@@ -162,7 +162,7 @@ const Home = () => {
       <section className="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-flame-600 via-flame-500 to-tiger-500 text-white relative overflow-hidden">
         <div className="absolute inset-0 bg-tiger-stripes opacity-10"></div>
         <div className="max-w-4xl mx-auto text-center relative z-10">
-          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 animate-fade-in">
+          <h2 className="text-2xl sm:text-4xl lg:text-3xl font-bold mb-4 sm:mb-6 animate-fade-in">
             Support Tulu Culture & Community
           </h2>
           <p className="text-lg sm:text-xl mb-8 sm:mb-10 opacity-95">

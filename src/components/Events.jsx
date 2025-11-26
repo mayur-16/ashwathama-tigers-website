@@ -37,7 +37,7 @@ const Events = () => {
 
         {/* Header */}
         <div className="mb-8 sm:mb-12 animate-slide-up">
-          <h1 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-flame-600 mb-2 relative inline-block">
+          <h1 className="text-2xl sm:text-4xl lg:text-3xl font-bold text-flame-600 mb-2 relative inline-block">
             Cultural Events
             <span className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-tiger-400 via-flame-500 to-transparent rounded-full"></span>
           </h1>
