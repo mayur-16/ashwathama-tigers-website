@@ -1,4 +1,3 @@
-// src/hooks/useDonationModal.js
 import { useState } from "react";
 
 export const useDonationModal = () => {

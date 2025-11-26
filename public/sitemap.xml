@@ -1,18 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+  
+  <!-- Home Page - Best Tiger Dance Mangalore -->
   <url>
     <loc>https://teamashwatthama.in/</loc>
-    <lastmod>2025-11-17</lastmod>
+    <lastmod>2025-11-26</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://teamashwatthama.in/og-image.jpg</image:loc>
+      <image:title>Best Tiger Dance Team Mangalore - Team Ashwatthama Tigers</image:title>
+      <image:caption>Professional Pili Vesha tiger dance performers from Edurupadavu, Moodushedde, Vamanjoor</image:caption>
+    </image:image>
   </url>
+  
+  <!-- Sevayojane Charity Page -->
   <url>
     <loc>https://teamashwatthama.in/sevayojane</loc>
-    <lastmod>2025-11-17</lastmod>
-    <priority>0.8</priority>
+    <lastmod>2025-11-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://teamashwatthama.in/sevayojane-image.jpg</image:loc>
+      <image:title>Sevayojane Charity Program - Tiger Dance for Community Service</image:title>
+      <image:caption>Community charity initiatives by Team Ashwatthama Tigers in Mangalore</image:caption>
+    </image:image>
   </url>
+  
+  <!-- Events Page -->
   <url>
     <loc>https://teamashwatthama.in/events</loc>
-    <lastmod>2025-11-17</lastmod>
-    <priority>0.8</priority>
+    <lastmod>2025-11-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://teamashwatthama.in/events-image.jpg</image:loc>
+      <image:title>Tiger Dance Events - Navratri, Dasara, Mosarukudike Performances</image:title>
+      <image:caption>Cultural events and tiger dance performances in Edurupadavu, Mangalore</image:caption>
+    </image:image>
   </url>
+
 </urlset>

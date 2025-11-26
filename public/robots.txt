@@ -1,7 +1,38 @@
+# robots.txt for Team Ashwatthama Tigers - Best Tiger Dance Mangalore
+
 User-agent: *
 Allow: /
+Allow: /sevayojane
+Allow: /events
 
 # Allow all crawlers to access static assets
-Allow: /static/
+Allow: /assets/
+Allow: /*.webp$
+Allow: /*.jpg$
+Allow: /*.png$
+Allow: /*.svg$
 
+# Optimize crawling
+Crawl-delay: 1
+
+# Block certain files
+Disallow: /src/
+Disallow: /node_modules/
+Disallow: /*.json$
+Disallow: /*.config.js$
+
+# Sitemaps
 Sitemap: https://teamashwatthama.in/sitemap.xml
+
+# Specific crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
