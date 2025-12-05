@@ -5,77 +5,58 @@
 ├── CNAME
 ├── README.md
 ├── convert-to-webp.mjs
+├── index.html
 ├── package-lock.json
 ├── package.json
+├── postcss.config.js
 ├── public
+│   ├── .htaccess
 │   ├── android-chrome-192x192.png
 │   ├── android-chrome-512x512.png
 │   ├── apple-touch-icon.png
 │   ├── favicon-16x16.png
 │   ├── favicon-32x32.png
 │   ├── favicon.ico
-│   ├── index.html
-│   ├── manifest.json
 │   ├── robots.txt
 │   ├── site.webmanifest
 │   ├── sitemap.xml
 │   └── upi-qr.jpeg
 ├── src
-│   ├── App.css
-│   ├── App.js
-│   ├── App.test.js
+│   ├── App.jsx
 │   ├── assets
 │   │   ├── events
-│   │   │   └── oodu_2025.jpg
+│   │   │   └── oodu_2025.webp
 │   │   ├── grouppics
-│   │   │   └── teamgrouppic1.jpg
+│   │   │   └── teamgrouppic1.webp
 │   │   ├── mosarukudike
-│   │   │   └── mosarukudike2025.jpg
-│   │   ├── optimized
-│   │   │   ├── events
-│   │   │   │   └── oodu_2025.webp
-│   │   │   ├── grouppics
-│   │   │   │   └── teamgrouppic1.webp
-│   │   │   ├── mosarukudike
-│   │   │   │   └── mosarukudike2025.webp
-│   │   │   ├── seva_brigade_logo.webp
-│   │   │   ├── sevayojane
-│   │   │   │   ├── sevayojane1.webp
-│   │   │   │   ├── sevayojane2.webp
-│   │   │   │   ├── sevayojane3.webp
-│   │   │   │   ├── sevayojane4.webp
-│   │   │   │   ├── sevayojane5.webp
-│   │   │   │   ├── sevayojane6.webp
-│   │   │   │   ├── sevayojane7.webp
-│   │   │   │   └── sevayojane8.webp
-│   │   │   └── team_logo.webp
-│   │   ├── seva_brigade_logo.png
+│   │   │   └── mosarukudike2025.webp
+│   │   ├── seva_brigade_logo.webp
 │   │   ├── sevayojane
-│   │   │   ├── sevayojane1.jpg
-│   │   │   ├── sevayojane2.jpg
-│   │   │   ├── sevayojane3.jpg
-│   │   │   ├── sevayojane4.jpg
-│   │   │   ├── sevayojane5.jpg
-│   │   │   ├── sevayojane6.jpg
-│   │   │   ├── sevayojane7.jpg
-│   │   │   └── sevayojane8.jpg
-│   │   └── team_logo.jpg
+│   │   │   ├── sevayojane1.webp
+│   │   │   ├── sevayojane2.webp
+│   │   │   ├── sevayojane3.webp
+│   │   │   ├── sevayojane4.webp
+│   │   │   ├── sevayojane5.webp
+│   │   │   ├── sevayojane6.webp
+│   │   │   ├── sevayojane7.webp
+│   │   │   └── sevayojane8.webp
+│   │   └── team_logo.webp
 │   ├── components
 │   │   ├── DonateButton.jsx
 │   │   ├── DonationModal.css
 │   │   ├── DonationModal.jsx
-│   │   ├── Events.js
-│   │   ├── Home.js
-│   │   └── Sevayojane.js
+│   │   ├── Events.jsx
+│   │   ├── Home.jsx
+│   │   └── Sevayojane.jsx
 │   ├── hooks
+│   │   ├── useCanonical.js
 │   │   └── useDonationModal.js
 │   ├── index.css
-│   ├── index.js
-│   ├── logo.svg
-│   ├── reportWebVitals.js
-│   ├── setupTests.js
+│   ├── main.jsx
 │   └── utils
 │       └── generateDonationImage.js
-└── structure.txt
+├── structure.txt
+├── tailwind.config.js
+└── vite.config.js
 
-16 directories, 63 files
+11 directories, 49 files
